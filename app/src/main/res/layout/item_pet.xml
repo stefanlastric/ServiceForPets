@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="32dp"
+    android:background="@android:color/holo_blue_light"
+    >
+
+    <TextView
+        android:id="@+id/race_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Race:   "
+        />
+
+
+
+    <TextView
+        android:id="@+id/race"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/race_placeholder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="name Of the pet"
+        />
+
+    <TextView
+        android:id="@+id/age_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/race_placeholder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Age:     "
+        />
+
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/race_placeholder"
+        app:layout_constraintStart_toEndOf="@id/age_placeholder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="age Of the pet"
+        />
+
+    <TextView
+        android:id="@+id/weight_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_placeholder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Weight:"
+        />
+
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/age_placeholder"
+        app:layout_constraintStart_toEndOf="@id/weight_placeholder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="weight Of the pet"
+        />
+
+    <Button
+        android:id="@+id/adopt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:text="Adopt"
+        android:textAllCaps="false"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
